@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import adapter.ViewPageAdapter;
+import fragments.CelsiusFragment;
+import fragments.FahrenheitFragment;
 import fragments.FirstFragment;
 import fragments.SIFragment;
 import fragments.SecondFragment;
@@ -29,6 +31,8 @@ public class ViewPagerActivity extends AppCompatActivity {
         adapter.addFragment(new FirstFragment(),"Sum");
         adapter.addFragment(new SecondFragment(),"Area of Circle");
         adapter.addFragment(new SIFragment(),"Simple Interest");
+        adapter.addFragment(new CelsiusFragment(),"F to C");
+        adapter.addFragment(new FahrenheitFragment(),"C to F");
 
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
