@@ -15,6 +15,7 @@
         android:hint="Enter Radius"
         android:layout_margin="10dp"
         android:gravity="center"
+        android:inputType="number"
         />
 
     <Button
