@@ -19,8 +19,8 @@ import com.fragments.R;
 public class FirstFragment extends Fragment  implements View.OnClickListener{
 
     private Button btncalculate;
-    private EditText etfirst, etsecond;
-    private TextView tvresult;
+    private EditText etfirst, etsecond,etresul;
+
 
 
     public FirstFragment() {
@@ -37,7 +37,7 @@ public class FirstFragment extends Fragment  implements View.OnClickListener{
          etfirst=view.findViewById(R.id.etfirst);
          etsecond=view.findViewById(R.id.etsecond);
          btncalculate=view.findViewById(R.id.btncalculate);
-         tvresult=view.findViewById(R.id.tvresult);
+         etresul=view.findViewById(R.id.etresul);
 
 
          btncalculate.setOnClickListener(this);
@@ -54,7 +54,7 @@ public class FirstFragment extends Fragment  implements View.OnClickListener{
         int result = first + second;
 
 
-        tvresult.setText(Integer.toString(result));
+        etresul.setText(Integer.toString(result));
 
         Toast.makeText(getActivity(),"Sum is: "+ result, Toast.LENGTH_SHORT).show();
 
